@@ -265,12 +265,12 @@ ul li {
 }
 
 .job h3, .project h3 {
-    color: #539ec4;
+    color: #55a3cb;
     font-size: 2rem;
 }
 
 .job p em, .project p em {
-    color: #aaa;
+    color: #abb8c6;
     font-size: 1.4rem;
 }
 

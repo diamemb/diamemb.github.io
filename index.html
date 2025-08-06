@@ -147,7 +147,7 @@
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; 2025 Diamé Mbaye. Tous droits réservés.</p>
+        <p>&copy; 2025 Papa Diamé Mbaye. Tous droits réservés.</p>
     </footer>
 
     <script>
@@ -194,21 +194,27 @@ window.addEventListener('scroll', () => {
     });
 });
 // Sélectionne les éléments
-const menuBtn = document.querySelector('.mobile-menu-btn');
-const mobileMenu = document.querySelector('.mobile-nav');
-
-// Gère le clic sur le bouton burger
-menuBtn.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active');
-});
-
-// Ferme le menu quand on clique sur un lien
-document.querySelectorAll('.mobile-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-    });
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-nav');
+    
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
         });
+        
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    } else {
+        console.error("Éléments du menu non trouvés !");
+    }
+});
+});
+        
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

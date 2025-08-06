@@ -9,18 +9,34 @@
 <body>
 
     <!-- ===== HEADER ===== -->
-    <header>
-        <h1>Papa Diamé's Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about" class="active">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <header>
+            <h1>Papa Diamé's Portfolio</h1>
+            
+            <!-- Bouton burger pour mobile -->
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Menu mobile séparé -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <section id="about" class="section active">
         <h2>À propos</h2>
@@ -175,6 +191,20 @@ window.addEventListener('scroll', () => {
             document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
             document.querySelector(`nav a[href="#${section.id}"]`).classList.add('active');
         }
+    });
+});
+// Gestion du menu burger
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const mobileNav = document.querySelector('.mobile-nav');
+
+mobileBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+
+// Ferme le menu quand on clique sur un lien
+document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
     });
 });
         });

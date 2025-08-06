@@ -193,18 +193,19 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-// Gestion du menu burger
-const mobileBtn = document.querySelector('.mobile-menu-btn');
-const mobileNav = document.querySelector('.mobile-nav');
+// Sélectionne les éléments
+const menuBtn = document.querySelector('.mobile-menu-btn');
+const mobileMenu = document.querySelector('.mobile-nav');
 
-mobileBtn.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
+// Gère le clic sur le bouton burger
+menuBtn.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
 });
 
 // Ferme le menu quand on clique sur un lien
 document.querySelectorAll('.mobile-nav a').forEach(link => {
     link.addEventListener('click', () => {
-        mobileNav.classList.remove('active');
+        mobileMenu.classList.remove('active');
     });
 });
         });

@@ -108,6 +108,41 @@ header {
     opacity: 1;
 }
 
+.mobile-menu-btn {
+    display: none; /* Caché par défaut sur desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    top: 70px; /* Ajuste selon la hauteur de ton header */
+    left: 0;
+    width: 100%;
+    background: #0d0d0d;
+    padding: 2rem;
+}
+
+/* Afficher le bouton seulement sur mobile */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .desktop-nav {
+        display: none; /* Cache le menu desktop */
+    }
+    
+    /* Quand le menu est actif */
+    .mobile-nav.active {
+        display: block;
+    }
+}
+
 /* Style pour le conteneur social + bouton CV */
 .social-download-container {
     margin-top: 3rem;

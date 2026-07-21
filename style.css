@@ -143,16 +143,48 @@ section {
 section:first-of-type {
     border-top: none;
     padding-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#network-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+#network-bg-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+section, footer {
+    position: relative;
+    z-index: 1;
 }
 
 .eyebrow {
     display: block;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 1.3rem;
-    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 2.2rem;
+    font-weight: 800;
     color: #d9635f;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .eyebrow-sub {
@@ -169,16 +201,17 @@ section p, section li {
 /* ====== HERO / À PROPOS ====== */
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 5rem;
     align-items: center;
+    min-height: 65vh;
 }
 
 .hero-name {
-    font-size: 4.4rem;
+    font-size: 6.4rem;
     font-weight: 700;
-    line-height: 1.15;
-    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
     color: #fff;
 }
 
@@ -190,7 +223,7 @@ section p, section li {
 .hero-cta {
     display: flex;
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
 }
 
@@ -200,8 +233,8 @@ section p, section li {
 }
 
 .photo-circle {
-    width: 22rem;
-    height: 22rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     background: #131313;
     border: 1px dashed rgba(255, 255, 255, 0.15);
@@ -230,9 +263,9 @@ section p, section li {
 }
 
 .typing-text {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #539ec4;
 }
 
@@ -277,11 +310,11 @@ section p, section li {
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    padding: 1.2rem 2.5rem;
+    padding: 1.4rem 2.8rem;
     background-color: #b74b4b;
     color: white !important;
     border-radius: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -295,11 +328,11 @@ section p, section li {
 .btn-ghost {
     display: inline-flex;
     align-items: center;
-    padding: 1.2rem 2.5rem;
+    padding: 1.4rem 2.8rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #fff;
     border-radius: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -353,6 +386,20 @@ section p, section li {
     transform: translateY(-3px);
 }
 
+.hero-more {
+    display: inline-flex;
+    margin-top: 3rem;
+    border: none;
+    padding: 0;
+    color: #d9635f;
+    font-weight: 600;
+}
+
+.hero-more:hover {
+    color: #fff;
+    border: none;
+}
+
 /* ====== COMPÉTENCES ====== */
 .skills-grid {
     display: grid;
@@ -361,7 +408,8 @@ section p, section li {
 }
 
 .skill-col h3 {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    font-weight: 700;
     color: #55a3cb;
     margin-bottom: 1.4rem;
 }
@@ -420,9 +468,10 @@ section p, section li {
 }
 
 .project-card h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .project-card p {
@@ -476,13 +525,14 @@ section p, section li {
 }
 
 .timeline-content h3 {
-    font-size: 1.9rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: #fff;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .timeline-company {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #55a3cb;
     margin-bottom: 0;
 }
@@ -506,9 +556,9 @@ section p, section li {
 
 /* ====== CONTACT ====== */
 .contact-statement {
-    font-size: 2.6rem;
-    font-weight: 600;
-    max-width: 700px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    max-width: 750px;
     margin-bottom: 3rem;
     color: #fff;
 }

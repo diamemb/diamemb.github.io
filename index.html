@@ -17,30 +17,31 @@
 
         <nav class="desktop-nav">
             <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="portfolio.html#formation">Formation</a></li>
+                <li><a href="portfolio.html#skills">Compétences</a></li>
+                <li><a href="portfolio.html#projects">Projets</a></li>
+                <li><a href="portfolio.html#experience">Expérience</a></li>
+                <li><a href="portfolio.html#contact">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Menu mobile séparé -->
         <nav class="mobile-nav">
             <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#experience">Expérience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="portfolio.html#formation">Formation</a></li>
+                <li><a href="portfolio.html#skills">Compétences</a></li>
+                <li><a href="portfolio.html#projects">Projets</a></li>
+                <li><a href="portfolio.html#experience">Expérience</a></li>
+                <li><a href="portfolio.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ===== HERO / À PROPOS ===== -->
-    <section id="about" class="section active">
+    <!-- ===== HERO (PAGE D'ACCUEIL) ===== -->
+    <section id="hero" class="section active">
+        <canvas id="network-bg"></canvas>
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-text">
@@ -51,7 +52,7 @@
                         <a href="CV_Diame_Mbaye.pdf" download class="download-btn">
                             <i class="fas fa-download"></i> Télécharger mon CV
                         </a>
-                        <a href="#contact" class="btn-ghost">Contact</a>
+                        <a href="portfolio.html#contact" class="btn-ghost">Contact</a>
                     </div>
 
                     <div class="social-icons">
@@ -65,6 +66,8 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
+
+                    <a href="portfolio.html" class="btn-ghost hero-more">Voir mon portfolio complet →</a>
                 </div>
 
                 <div class="hero-photo">
@@ -73,245 +76,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="about-grid">
-                <div class="about-text">
-                    <span class="eyebrow">À propos</span>
-                    <p>Mon nom est Papa Diamé Mbaye, étudiant en 2e année de Génie Informatique à l’Université Laval. Passionné par la conception et le développement de systèmes informatiques, je possède un esprit analytique,
-                        innovant et synthétique. J'aime relever des défis techniques et me tenir constamment à jour sur les évolutions
-                        technologiques. Rigoureux et ingénieux, je suis également doté de solides compétences en communication, d'une bonne capacité d'écoute
-                        et d'un excellent esprit d'équipe.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION FORMATION ===== -->
-    <section id="formation" class="section">
-        <div class="container">
-            <span class="eyebrow">Formation</span>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">Depuis 2023</span>
-                    <div class="timeline-content">
-                        <h3>Baccalauréat en Génie Informatique</h3>
-                        <p class="timeline-company">Université Laval, Québec</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2022 – 2023</span>
-                    <div class="timeline-content">
-                        <h3>Diplôme d'études secondaires, sciences</h3>
-                        <p class="timeline-company">Lycée d'Excellence Privé Birago Diop, Dakar — mention Bien</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION COMPÉTENCES ===== -->
-    <section id="skills" class="section">
-        <div class="container">
-            <span class="eyebrow">Compétences</span>
-
-            <div class="skills-grid">
-                <div class="skill-col">
-                    <h3>Programmation</h3>
-                    <div class="chip-group">
-                        <span class="chip">C++</span>
-                        <span class="chip">Python</span>
-                        <span class="chip">HTML/CSS</span>
-                    </div>
-                </div>
-
-                <div class="skill-col">
-                    <h3>Outils</h3>
-                    <div class="chip-group">
-                        <span class="chip">Git</span>
-                        <span class="chip">Linux</span>
-                        <span class="chip">Qt</span>
-                        <span class="chip">Visual Studio</span>
-                        <span class="chip">VS Code</span>
-                        <span class="chip">LTspice</span>
-                        <span class="chip">MATLAB</span>
-                    </div>
-                </div>
-
-                <div class="skill-col">
-                    <h3>Réseaux</h3>
-                    <div class="chip-group">
-                        <span class="chip">Cisco Packet Tracer</span>
-                        <span class="chip">GNS3</span>
-                        <span class="chip">VLAN &amp; Trunking</span>
-                        <span class="chip">OSPF / OSPFv3</span>
-                        <span class="chip">EtherChannel (PAgP/LACP)</span>
-                        <span class="chip">Wireshark</span>
-                        <span class="chip">iperf3</span>
-                    </div>
-                </div>
-
-                <div class="skill-col">
-                    <h3>Systèmes &amp; Sécurité</h3>
-                    <div class="chip-group">
-                        <span class="chip">Windows Server</span>
-                        <span class="chip">RADIUS</span>
-                        <span class="chip">SolarWinds</span>
-                        <span class="chip">Administration système</span>
-                    </div>
-                </div>
-
-                <div class="skill-col">
-                    <h3>Langues</h3>
-                    <div class="chip-group">
-                        <span class="chip chip-outline">Français</span>
-                        <span class="chip chip-outline">Anglais</span>
-                        <span class="chip chip-outline">Wolof</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION PROJETS ===== -->
-    <section id="projects" class="section">
-        <div class="container">
-            <span class="eyebrow">Projets en informatique</span>
-
-            <div class="project-grid">
-                <div class="project-card">
-                    <span class="project-meta">Automne 2023 · Université Laval</span>
-                    <h3>Gestionnaire de Portefeuille d'Actions</h3>
-                    <p>Programme Python pour gérer un ou plusieurs portefeuilles d'actions, avec récupération de données boursières via des API web et suivi de projet en équipe (méthodologie Agile).</p>
-                    <div class="tag-group">
-                        <span class="tag">Python</span>
-                        <span class="tag">API</span>
-                        <span class="tag">Agile</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <span class="project-meta">Hiver 2024 · Université Laval</span>
-                    <h3>Système d'Éclairage Intelligent pour Salle d'Exposition</h3>
-                    <p>Design conceptuel d'un système d'éclairage intelligent pour salle d'exposition, avec un dispositif mobile interactif et un rapport technique complet.</p>
-                    <div class="tag-group">
-                        <span class="tag">Conception</span>
-                        <span class="tag">Mobile</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <span class="project-meta">Hiver 2025 · Université Laval</span>
-                    <h3>Contrôleur de Ventilateur de Refroidissement</h3>
-                    <p>Conception et réalisation d'un contrôleur de ventilateur de refroidissement sur carte Arduino Uno, avec évaluation des performances du système.</p>
-                    <div class="tag-group">
-                        <span class="tag">Arduino</span>
-                        <span class="tag">Électronique</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <span class="project-meta">Projet personnel</span>
-                    <h3>YobbMa – Application de Covoiturage</h3>
-                    <p>Application mobile de covoiturage au Sénégal développée avec React Native (Expo) et Supabase : intégration du paiement PayDunya, flux de publication de trajets, thème sombre, build Android via EAS.</p>
-                    <div class="tag-group">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Supabase</span>
-                        <span class="tag">Mobile</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <span class="project-meta">Projet personnel</span>
-                    <h3>Scanner de Réseau Local</h3>
-                    <p>Application Flask (Python) qui scanne le réseau Wi-Fi local et affiche les appareils connectés (IP, adresse MAC, hostname), avec découverte réseau via nmap/python-nmap.</p>
-                    <div class="tag-group">
-                        <span class="tag">Python</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">Réseaux</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION EXPÉRIENCE ===== -->
-    <section id="experience" class="section">
-        <div class="container">
-            <span class="eyebrow">Expérience</span>
-
-            <div class="timeline">
-                <div class="timeline-item featured">
-                    <span class="timeline-date">Juin 2026 – Août 2026</span>
-                    <div class="timeline-content">
-                        <h3>Stagiaire en Réseaux et Systèmes</h3>
-                        <p class="timeline-company">Senelec, Dakar, Sénégal</p>
-                        <ul class="timeline-tasks">
-                            <li>Cartographie des équipements réseau avec SolarWinds</li>
-                            <li>Analyse et compréhension de l'infrastructure réseau de l'entreprise</li>
-                            <li>Configuration et analyse d'équipements réseau : switches Cisco, routage OSPF/OSPFv3 (IPv6), VLAN, trunking, EtherChannel (PAgP/LACP)</li>
-                            <li>Analyse de trafic réseau avec Wireshark (TCP/UDP) et tests de performance avec iperf3</li>
-                            <li>Travaux sur l'authentification Wi-Fi via RADIUS sous Windows Server</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <span class="eyebrow eyebrow-sub">Autres expériences de travail</span>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">Mai 2025 – Présent</span>
-                    <div class="timeline-content">
-                        <h3>Commis Entrepôt</h3>
-                        <p class="timeline-company">Pepsi Alex Coulombe, Québec</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Février 2024 – Août 2025</span>
-                    <div class="timeline-content">
-                        <h3>Commis Commerce en Ligne</h3>
-                        <p class="timeline-company">Metro Québec</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">Octobre 2023 – Janvier 2024</span>
-                    <div class="timeline-content">
-                        <h3>Commis Fruits &amp; Légumes</h3>
-                        <p class="timeline-company">Maxi Québec</p>
-                    </div>
-                </div>
-            </div>
-
-            <span class="eyebrow eyebrow-sub">Centres d'intérêt</span>
-            <div class="chip-group">
-                <span class="chip">Soccer</span>
-                <span class="chip">Musique</span>
-                <span class="chip">Jeux vidéo</span>
-                <span class="chip">Vélo</span>
-                <span class="chip">Photographie</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== SECTION CONTACT ===== -->
-    <section id="contact" class="section">
-        <div class="container">
-            <span class="eyebrow">Contact</span>
-            <h2 class="contact-statement">Disponible pour un stage ou une opportunité en génie informatique.</h2>
-
-            <div class="contact-pills">
-                <a href="mailto:pdmba1@ulaval.ca" class="pill-btn">
-                    <i class="fas fa-envelope"></i> pdmba1@ulaval.ca
-                </a>
-                <a href="https://www.linkedin.com/in/papa-diamé-mbaye-744aa0292" target="_blank" class="pill-btn">
-                    <i class="fab fa-linkedin-in"></i> LinkedIn
-                </a>
-                <a href="https://github.com/pdmba1" target="_blank" class="pill-btn">
-                    <i class="fab fa-github"></i> pdmba1
-                </a>
-            </div>
-
-            <a href="#about" class="btn">Revenir en haut</a>
         </div>
     </section>
 
@@ -321,31 +85,73 @@
     </footer>
 
     <script>
-        const links = document.querySelectorAll("nav a");
-        const sections = document.querySelectorAll(".section");
+        // ===== FOND ANIMÉ : réseau de particules =====
+        (function() {
+            const canvas = document.getElementById('network-bg');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const heroSection = canvas.closest('section');
+            let particles = [];
+            let width, height;
 
-        links.forEach(link => {
-            link.addEventListener("click", e => {
-                e.preventDefault();
-                const targetId = link.getAttribute("href").substring(1);
-                document.querySelector(targetId) && document.querySelector(`#${targetId}`).scrollIntoView({ behavior: "smooth" });
+            function resize() {
+                width = canvas.width = heroSection.offsetWidth;
+                height = canvas.height = heroSection.offsetHeight;
+            }
 
-                links.forEach(l => l.classList.remove("active"));
-                link.classList.add("active");
-            });
-        });
+            function createParticles() {
+                const count = Math.floor((width * height) / 22000);
+                particles = Array.from({ length: count }, () => ({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    vx: (Math.random() - 0.5) * 0.3,
+                    vy: (Math.random() - 0.5) * 0.3
+                }));
+            }
 
-        // Active la section visible au scroll
-        window.addEventListener('scroll', () => {
-            document.querySelectorAll('section').forEach(section => {
-                const rect = section.getBoundingClientRect();
-                if (rect.top <= 100 && rect.bottom >= 100) {
-                    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-                    const activeLink = document.querySelector(`nav a[href="#${section.id}"]`);
-                    if (activeLink) activeLink.classList.add('active');
+            function draw() {
+                ctx.clearRect(0, 0, width, height);
+
+                particles.forEach(p => {
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    if (p.x < 0 || p.x > width) p.vx *= -1;
+                    if (p.y < 0 || p.y > height) p.vy *= -1;
+                });
+
+                const maxDist = 140;
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < maxDist) {
+                            ctx.strokeStyle = `rgba(183, 75, 75, ${1 - dist / maxDist})`;
+                            ctx.lineWidth = 0.6;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                    ctx.beginPath();
+                    ctx.arc(particles[i].x, particles[i].y, 1.6, 0, Math.PI * 2);
+                    ctx.fill();
                 }
+
+                requestAnimationFrame(draw);
+            }
+
+            resize();
+            createParticles();
+            draw();
+
+            window.addEventListener('resize', () => {
+                resize();
+                createParticles();
             });
-        });
+        })();
 
         // Menu burger mobile
         document.addEventListener('DOMContentLoaded', function() {

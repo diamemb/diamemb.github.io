@@ -92,6 +92,23 @@ nav a.active::after {
     width: 100%;
 }
 
+.lang-switch {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0.6rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: 700;
+    font-size: 1.3rem !important;
+}
+
+.lang-switch::after {
+    display: none;
+}
+
+.lang-switch:hover {
+    border-color: #b74b4b;
+    background: rgba(183, 75, 75, 0.1);
+}
+
 /* ====== NAV (MOBILE) ====== */
 .mobile-menu-btn {
     display: none;
@@ -279,6 +296,18 @@ section p, section li {
     25%  { content: "Passionné par le Développement"; }
     50%  { content: "et les Systèmes Informatiques"; }
     75%  { content: "À la recherche de défis"; }
+}
+
+:lang(en) .typing-text span::before {
+    content: "Hi, I'm Papa Diamé ";
+    animation: words-en 15s infinite;
+}
+
+@keyframes words-en {
+    0%   { content: "Computer Engineering Student"; }
+    25%  { content: "Passionate about Development"; }
+    50%  { content: "and Computer Systems"; }
+    75%  { content: "Looking for New Challenges"; }
 }
 
 .about-grid {

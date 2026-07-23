@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,36 +12,36 @@
     <header>
         <h1>Papa Diamé's Portfolio</h1>
 
-        <!-- Bouton burger pour mobile -->
+        <!-- Mobile burger button -->
         <button class="mobile-menu-btn" aria-label="Menu">☰</button>
 
         <nav class="desktop-nav">
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="portfolio.html#formation">Formation</a></li>
-                <li><a href="portfolio.html#skills">Compétences</a></li>
-                <li><a href="portfolio.html#projects">Projets</a></li>
-                <li><a href="portfolio.html#experience">Expérience</a></li>
-                <li><a href="portfolio.html#contact">Contact</a></li>
-                <li><a href="index-en.html" class="lang-switch">EN</a></li>
+                <li><a href="index-en.html" class="active">Home</a></li>
+                <li><a href="portfolio-en.html#education">Education</a></li>
+                <li><a href="portfolio-en.html#skills">Skills</a></li>
+                <li><a href="portfolio-en.html#projects">Projects</a></li>
+                <li><a href="portfolio-en.html#experience">Experience</a></li>
+                <li><a href="portfolio-en.html#contact">Contact</a></li>
+                <li><a href="index.html" class="lang-switch">FR</a></li>
             </ul>
         </nav>
 
-        <!-- Menu mobile séparé -->
+        <!-- Separate mobile menu -->
         <nav class="mobile-nav">
             <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="portfolio.html#formation">Formation</a></li>
-                <li><a href="portfolio.html#skills">Compétences</a></li>
-                <li><a href="portfolio.html#projects">Projets</a></li>
-                <li><a href="portfolio.html#experience">Expérience</a></li>
-                <li><a href="portfolio.html#contact">Contact</a></li>
-                <li><a href="index-en.html" class="lang-switch">EN</a></li>
+                <li><a href="index-en.html" class="active">Home</a></li>
+                <li><a href="portfolio-en.html#education">Education</a></li>
+                <li><a href="portfolio-en.html#skills">Skills</a></li>
+                <li><a href="portfolio-en.html#projects">Projects</a></li>
+                <li><a href="portfolio-en.html#experience">Experience</a></li>
+                <li><a href="portfolio-en.html#contact">Contact</a></li>
+                <li><a href="index.html" class="lang-switch">FR</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ===== HERO (PAGE D'ACCUEIL) ===== -->
+    <!-- ===== HERO (HOME PAGE) ===== -->
     <section id="hero" class="section active">
         <canvas id="network-bg"></canvas>
         <div class="container">
@@ -52,9 +52,9 @@
 
                     <div class="hero-cta">
                         <a href="CV%20Papa%20Diam%C3%A9.pdf" download class="download-btn">
-                            <i class="fas fa-download"></i> Télécharger mon CV
+                            <i class="fas fa-download"></i> Download my CV
                         </a>
-                        <a href="portfolio.html#contact" class="btn-ghost">Contact</a>
+                        <a href="portfolio-en.html#contact" class="btn-ghost">Contact</a>
                     </div>
 
                     <div class="social-icons">
@@ -69,7 +69,7 @@
                         </a>
                     </div>
 
-                    <a href="portfolio.html" class="btn-ghost hero-more">Voir mon portfolio complet →</a>
+                    <a href="portfolio-en.html" class="btn-ghost hero-more">See my full portfolio →</a>
                 </div>
 
                 <div class="hero-photo">
@@ -83,11 +83,11 @@
 
     <!-- ===== FOOTER ===== -->
     <footer>
-        <p>&copy; 2026 Papa Diamé Mbaye. Tous droits réservés.</p>
+        <p>&copy; 2026 Papa Diamé Mbaye. All rights reserved.</p>
     </footer>
 
     <script>
-        // ===== FOND ANIMÉ : réseau de particules =====
+        // ===== ANIMATED BACKGROUND: particle network =====
         (function() {
             const canvas = document.getElementById('network-bg');
             if (!canvas) return;
@@ -155,7 +155,7 @@
             });
         })();
 
-        // Menu burger mobile
+        // Mobile burger menu
         document.addEventListener('DOMContentLoaded', function() {
             const menuBtn = document.querySelector('.mobile-menu-btn');
             const mobileMenu = document.querySelector('.mobile-nav');
